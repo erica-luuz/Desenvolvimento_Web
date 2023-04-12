@@ -1,0 +1,37 @@
+<!--Crie um objeto com os seguintes valores inseridos pelo usuário: Nome da empresa, CNPJ, Tipo de empresa(banco, mercado ou farmácia)
+Quantidade de funcionários. Adicione esses objetos-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var nomeEmpresa = prompt("digite o nome da empresa:")
+    var cnpj = prompt("Digite o CNPJ:")
+    var tipoDaEmpresa = prompt("Digite o tipo da empresa:")
+    var quantidadeDeFuncionarios = parseInt(prompt("Digite a quantidade de funcionários:"))
+
+
+    var empresa = {
+        nome: nomeEmpresa,
+        cnpj: cnpj,
+        tipoDaEmpresa: tipoDaEmpresa,
+        quantidadeDeFuncionarios: quantidadeDeFuncionarios
+    }
+
+    var lista = []
+    lista.push(empresa)
+
+    document.writeln("Nome da empresa: ", lista[0].nome)
+
+    
+
+
+
+
+</script>
+</html>
