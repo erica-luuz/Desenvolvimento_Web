@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio2</title>
+</head>
+
+<body>
+    <h1>Meu Filme Favorito</h1>
+
+</body>
+<script>
+
+    var filme = {
+        nomeFilme: prompt("Digite o nome do seu filme favorito: "),
+        anoLancamento: prompt("Digite o ano de lançamento: "),
+        nomeProtagonista: prompt("Digite o nome do protagonista: ")
+    }
+
+    var database = []
+    database.push(filme)
+    document.writeln("Nome do filme: ", database[0].nomeFilme)
+    document.writeln("<br>Foi lançado em: ", database[0].anoLancamento)
+    document.writeln("<br>O nome do seu protagonista é: ", database[0].nomeProtagonista)
+
+
+
+</script>
+
+</html>
