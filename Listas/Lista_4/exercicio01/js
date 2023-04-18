@@ -1,0 +1,27 @@
+var contaCorrente = {
+    saldo: 105,
+    faturaAtual: 101,
+    creditoDisponivel: 20.0,
+    exibirExtrato: true,
+    extrato: {
+        entrada: [
+            {
+                data: "17.04.23",
+                valor: 25.0
+            }
+        ],
+        saida: [
+            {
+                data: "18.04.23",
+                valor: 10.0,
+                descricao: "Mercado"
+            }
+        ]
+    }
+}
+
+if (contaCorrente.saldo >= contaCorrente.faturaAtual) {
+    console.log("Você possui saldo para pagar a fatura atual")
+} else {
+    console.log("Você não possui saldo suficiente para pagar a fatura")
+}
