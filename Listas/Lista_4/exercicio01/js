@@ -2,7 +2,6 @@ var contaCorrente = {
     saldo: 105,
     faturaAtual: 101,
     creditoDisponivel: 20.0,
-    exibirExtrato: true,
     extrato: {
         entrada: [
             {
@@ -17,11 +16,28 @@ var contaCorrente = {
                 descricao: "Mercado"
             }
         ]
-    }
+    },
+    exibirExtrato: true
 }
 
 if (contaCorrente.saldo >= contaCorrente.faturaAtual) {
     console.log("Você possui saldo para pagar a fatura atual")
 } else {
     console.log("Você não possui saldo suficiente para pagar a fatura")
+}
+
+if (contaCorrente.exibirExtrato == true){
+    
+    for(var i =0; i < contaCorrente.extrato.entrada.length; i++){
+        var data =contaCorrente.extrato.entrada[i].data;
+        var valor = contaCorrente.extrato.entrada[i].valor;
+        console.log("Data " + data + " Valor: " + valor);
+    }
+    
+    for(var i =0; i < contaCorrente.extrato.saida.length; i++){
+        var data =contaCorrente.extrato.saida[i].data;
+        var valor = contaCorrente.extrato.saida[i].valor;
+        var descricao = contaCorrente.extrato.saida[i]. descricao
+        console.log("Data " + data + " Valor: " + valor + " Descrição: " + descricao);
+    }
 }
