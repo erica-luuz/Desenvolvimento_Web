@@ -1,0 +1,21 @@
+.cabeçalho{
+    display: flex;
+    background-color: aliceblue;
+}
+.cabeçalho img{
+    justify-content: flex-start;
+}
+
+#menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.item-menu{
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
