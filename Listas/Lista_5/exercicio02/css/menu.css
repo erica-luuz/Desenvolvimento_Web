@@ -1,0 +1,27 @@
+.cabeçalho{
+    background-color:rgb(240, 184, 42);
+    max-height: 100px;
+}
+
+.cabeçalho img{
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 50px;
+    width: 50px;
+    justify-content: flex-start;
+    
+}
+.menu{
+    justify-content: end;
+    display: flex;
+}
+.item-menu{
+    margin-bottom: 150px;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    color:darkred;
+    font-family: 'Times New Roman', Times, serif;
+}
+
