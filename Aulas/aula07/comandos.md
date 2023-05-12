@@ -5,7 +5,7 @@
 ## Bibliotecas usadas:
     - express js
 
-## Comandos usados
+## Comandos npm usados
     - npm init-y
     - npm intall express
-    - node servidor
+    - node servidor.js

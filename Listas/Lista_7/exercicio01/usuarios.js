@@ -1,7 +1,3 @@
-const express = require('express');
-const app = express();
-const port = 7001;
-
 
 let usuarios = [
     {
@@ -50,11 +46,3 @@ let usuarios = [
         endereco: ["Rua da Abelha,540", "Rua do casarão, 789"]
     }
 ]
-
-app.get("/usuarios", function (req, res) {
-    return res.send(usuarios)
-})
-
-app.listen(port, function () {
-    console.log(`Servidor rodando http:/localHost:${port}`)
-})
