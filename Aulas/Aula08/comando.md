@@ -11,10 +11,6 @@
     - npm init -y | inicializa package.json
     - npm install express | instala a biblioteca express
     - npm install | instala a biblioteca/dependências
-    
-### Comando do git
-    - git add .  | prepara arquivos para serem subidos no repositorio
-    - git commit -m |
 
 ### Métodos HTTP
     - GET    | Buscar dados
