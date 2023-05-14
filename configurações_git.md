@@ -22,4 +22,6 @@
     - git branch nome-da-branch  | cria uma branch
     - git checkout nome-da-branch  | muda da branch
     - git branch -a  | listar todas as branchs
-    - git checkout -b nome-da-branch   |  
+    - git checkout -b nome-da-branch e troca para a branch criada
+    - git branch - d nome-da-branch   | apaga uma branch
+    - git pull  | Atualiza repositorio local |  
