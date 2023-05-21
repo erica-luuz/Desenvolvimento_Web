@@ -17,6 +17,7 @@ app.post('/adicionar-produto', (req, res) =>{
     return res.status(201).json(" produto adicionado com sucesso")
 })
 
+
 app.listen(port, function () {
     console.log(`servidor rodando http://localhost:${port}`)
 })
