@@ -1,8 +1,8 @@
 const express = require('express')
-const app = express
+const app = express()
 const port = 7000
 
-app.request(express.json())
+app.use(express.json())
 
 let bancoDeDadosProdutos = []
 
