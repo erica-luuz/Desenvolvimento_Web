@@ -1,10 +1,22 @@
+<div id="menu">
+  <a class="item-menu" href="#">{{ link1 }}</a>
+  <a class="item-menu" href="#">{{ link2 }}</a>
+  <a class="item-menu" href="#">{{ link3 }}</a>
+  <a class="item-menu" href="#">{{ link4 }}</a>
+  <a class="item-menu" href="#">{{ link5 }}</a>
+</div>
+
 <h1 class="titulo">{{ mensagem }}</h1>
 
+
 <div class="produtos" *ngFor="let produto of produtos">
+  <img [src]="produto.imagem" />
   <p>{{ produto.nome }}</p>
   <p>{{ produto.descricao }}</p>
   <p>{{ produto.valor }}</p>
-  <img [src]="produto.imagem" />
+  <button (click)="detalhes()">Detalhes</button>
+  <button (click)="comprar()">comprar</button>
+
 </div>
 
 
