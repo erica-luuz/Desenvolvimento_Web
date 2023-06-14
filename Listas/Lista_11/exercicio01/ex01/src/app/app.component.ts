@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import Produto from './models/produto';
-import Menu from './models/menu';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +8,6 @@ import Menu from './models/menu';
 })
 export class AppComponent {
 
-  public link1: string = "HOME"
-  public link2: string = "PRODUTOS"
-  public link3: string = "SOBRE NÓS"
-  public link4: string = "CONTATO"
-  public link5: string = "LOGIN"
 
   public detalhes(){
     alert('Ir para a página de detalhes');
