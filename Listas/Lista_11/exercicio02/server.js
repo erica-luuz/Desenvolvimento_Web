@@ -68,7 +68,7 @@ mongoose.connect(connectioString, {
     dbName: "DevShopping"
 }).then(() => {
     console.log("MongoDB UP!")
-    console.log(`http://localhost:${port}`)
+    console.log(`http://localhost:${port}`)   
     app.listen(port)
 }).catch((error) => {
     console.log(error)
