@@ -2,12 +2,15 @@ const express = require('express')   // chamando express
 const mongoose = require('mongoose')  // chamando moongose
 const app = express()
 const port = 8050
-const connectionString = "mongodb+srv://admin:123@appdatabase.aa7jsp7.mongodb.net/" //string de conexão
+const connectionString  = "mongodb+srv://admin:admin123@appdatabase.ry0gm2w.mongodb.net/" //string de conexão
+const cors = require('cors')
 const Animal = require('./models/animal') // chamando (conectando) o modulo animal
+
 
 app.use(express.json()) // para o postman conseguir executar
 // Rota get foi criado depois de eu criar o models/animal e exportar ele para essa pasta
 //endpoint
+app.use(cors())
 app.get("/listar-animais", async (req, res) => { // async: trabalha junto com o await
     try {
         let animais = await Animal.find() // await: para esperar enquanto executa essa linha ate o fim, para depois descer que terminar descer para a próxima linha.
